@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "OnchainGitbookDao_backend": {
+      "main": "src/OnchainGitbookDao_backend/main.mo",
+      "type": "motoko"
+    },
+    "OnchainGitbookDao_frontend": {
+      "dependencies": [
+        "OnchainGitbookDao_backend"
+      ],
+      "source": [
+        "src/OnchainGitbookDao_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "OnchainGitbookDao_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
